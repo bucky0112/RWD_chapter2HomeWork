@@ -50,3 +50,36 @@ table {
 }
 
 /* .......................css reset end............................ */
+
+.main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.head_top{
+    background: #f6f6f6;
+    padding: 5px;
+}
+
+.social_contact{
+    margin-right: 20px;
+    float: right;
+}
+
+.fb_icon, .twitter_icon{
+    float: left;
+}
+
+.social_contact li{
+    padding-left: 20px;
+}
+
+.social_contact li a{
+    text-decoration: none;
+}
+
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: table;
+}
