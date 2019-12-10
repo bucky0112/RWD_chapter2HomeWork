@@ -49,20 +49,31 @@ table {
 	border-spacing: 0;
 }
 
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 /* .......................css reset end............................ */
 
-.main{
+.wrap{
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/* head start */
+
 .head_top{
     background: #f6f6f6;
-    padding: 5px;
+    padding: 0.5%;
 }
 
 .social_contact{
-    margin-right: 20px;
+    margin-right: 2%;
     float: right;
 }
 
@@ -70,13 +81,145 @@ table {
     float: left;
 }
 
+.fb_icon span{
+    color: #3060A3;
+}
+
+
+.twitter_icon span{
+    color: #2EACEF;
+}
+
 .social_contact li{
-    padding-left: 20px;
+    padding-left: 1em;
 }
 
 .social_contact li a{
     text-decoration: none;
 }
+
+.navbar{
+    box-shadow: 0 5px 5px #f6f6f6;
+}
+
+.navbar h1{
+    margin: 10px 0 5px 20px;
+}
+
+.navbar h1 a{
+    background-image: url(../images/logo.png);
+    height: 36px;
+    width: 170px;
+    display: block;
+    float: left;
+    white-space: nowrap;
+    text-indent: 101%;
+    overflow: hidden;
+}
+
+.section{
+    float: right;
+}
+
+
+
+.section li{
+    float: left;
+    border-bottom: 3px solid transparent ;
+}
+
+.section li:hover{
+    border-bottom: 3px solid #2CCD98;
+}
+
+.section li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px 20px 20px ;
+    color: #2CCD98;
+}
+
+/* head end */
+
+/* content start */
+
+.hex_class{
+    margin-left: 1em;
+    margin-top: 8%;
+}
+
+.hex_class li{
+    max-width: 32.33333%;
+    float: left;
+    border: 2px solid #f6f6f6; 
+    border-top: none;
+    margin-right: 3%;
+    padding: 2%;
+}
+
+
+.hex_class h2{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.hex_class p{
+    line-height: 150%;
+}
+
+.html_class img{
+    margin-left: 12%; 
+    margin-bottom: 5%;
+}
+
+.rwd_class img{
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.jquery_class img{
+    margin-bottom: 5%;
+}
+
+.jquery_class h2{
+    margin-bottom: 9%;
+}
+
+.jquery_class li{
+    float: none;
+    border: none;
+    list-style-type: disc;
+    max-width: 100%;
+    margin: 0 10px;
+}
+
+
+
+/* content end */
+
+@media(max-width: 767px){
+    .navbar h1 a{
+        float: none;
+        margin: 0 auto;
+    }
+    .section{
+        width: 90%;
+        margin: 10px auto;
+    }
+    
+   .section li{
+        width: 45%;
+}
+
+    .section li a{
+        text-align: center;
+    }
+
+}
+
+
 
 .clearfix::after{
     content:"";
