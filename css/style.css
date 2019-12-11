@@ -138,6 +138,9 @@ img{
 }
 
 @media(max-width: 767px){
+    .social_contact li :hover{
+        color: rgb(231, 101, 62);
+    }
     .navbar h1 a{
         float: none;
         margin: 0 auto;
@@ -150,6 +153,10 @@ img{
    .section li{
         width: 45%;
 }
+
+    .section li :hover{
+        color: rgb(231, 101, 62);
+    }
 
     .section li a{
         text-align: center;
