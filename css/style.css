@@ -121,8 +121,6 @@ img{
     float: right;
 }
 
-
-
 .section li{
     float: left;
     border-bottom: 3px solid transparent ;
@@ -138,66 +136,6 @@ img{
     padding: 10px 20px 20px 20px ;
     color: #2CCD98;
 }
-
-/* head end */
-
-/* content start */
-
-.hex_class{
-    margin-left: 1em;
-    margin-top: 8%;
-}
-
-.hex_class li{
-    max-width: 32.33333%;
-    float: left;
-    border: 2px solid #f6f6f6; 
-    border-top: none;
-    margin-right: 3%;
-    padding: 2%;
-}
-
-
-.hex_class h2{
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-.hex_class p{
-    line-height: 150%;
-}
-
-.html_class img{
-    margin-left: 12%; 
-    margin-bottom: 5%;
-}
-
-.rwd_class img{
-    margin-left: 10%;
-    margin-bottom: 5%;
-}
-
-.jquery_class img{
-    margin-bottom: 5%;
-}
-
-.jquery_class h2{
-    margin-bottom: 9%;
-}
-
-.jquery_class li{
-    float: none;
-    border: none;
-    list-style-type: disc;
-    max-width: 100%;
-    margin: 0 10px;
-}
-
-
-
-/* content end */
 
 @media(max-width: 767px){
     .navbar h1 a{
@@ -219,7 +157,101 @@ img{
 
 }
 
+/* head end */
 
+/* content start */
+
+.hex_class{
+    padding-left: 3%;
+    padding-top: 8%;
+}
+
+.hex_class li{
+    max-width: 32.33333%;
+    float: left;
+    border: 2px solid #f6f6f6; 
+    border-top: none;
+    margin-right: 3%;
+    padding: 2%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #f6f6f6;
+}
+
+
+.hex_class h2{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.hex_class p{
+    line-height: 150%;
+}
+
+.html_class img{
+    margin-left: 12%; 
+    margin-bottom: 6%;
+}
+
+.html_class p{
+    padding-bottom: 8%;
+}
+
+
+.rwd_class img{
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.jquery_class img{
+    margin-bottom: 5%;
+}
+
+.jquery_class h2{
+    margin-bottom: 9%;
+}
+
+.jquery_class li{
+    float: none;
+    border: none;
+    list-style-type: disc;
+    max-width: 100%;
+    margin: 0 8%;
+    padding-bottom: 5%;
+}
+
+@media(max-width: 767px){
+    .hex_class li{
+        float: none;
+        max-width: 100%;
+    }
+
+
+    .hex_class li img{
+        width: 50%;
+        margin-left: 24%;
+    }
+
+    .html_class p{
+        padding-bottom: 0;
+    }
+
+    .jquery_class p{
+        text-align: center;
+    }
+
+    .jquery_class li{
+        border: none;
+        box-shadow: none;
+        padding-bottom: 1%;
+    }
+
+}
+
+
+
+/* content end */
 
 .clearfix::after{
     content:"";
